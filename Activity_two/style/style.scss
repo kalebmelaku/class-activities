@@ -1,22 +1,27 @@
 @import './variable';
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-ul{
+
+ul {
     list-style: none;
-    a{
+
+    a {
         text-decoration: none;
         color: #fff;
     }
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.btn{
+
+.btn {
     padding: 15px 25px;
     background-color: $primary;
     text-decoration: none;
@@ -24,50 +29,59 @@ ul{
     border-radius: 10px;
     text-transform: uppercase;
 }
-.btn-secondary{
+
+.btn-secondary {
     background-color: transparent;
     border: 3px solid #fff;
 }
-.leading{
+
+.leading {
     color: $primary;
 }
-header{
+
+header {
     height: 80vh;
     padding: 40px 0;
-    background-image: linear-gradient(to right, 
-    rgba(0, 0, 0, 0.85),
-    rgba(23, 23, 23, 0.207)),
-        url(../assets/images/dark-hero-3-cover\ sec-.png)
-    ;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.85),
+            rgba(23, 23, 23, 0.207)),
+        url(../assets/images/dark-hero-3-cover\ sec-.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    nav{
+
+    nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: #fff;
-        .nav-links{
+
+        .nav-links {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            .logo{
+
+            .logo {
                 font-size: 30px;
                 text-transform: uppercase;
             }
-            ul{
+
+            ul {
                 display: flex;
                 align-items: center;
                 margin-left: 40px;
-                li{
+
+                li {
                     margin-left: 15px;
-                    a{
+
+                    a {
                         position: relative;
                         width: 50px;
                         height: 100px;
                         padding-bottom: 5px;
                     }
-                    a::before{
+
+                    a::before {
                         position: absolute;
                         content: "";
                         background-color: white;
@@ -75,8 +89,9 @@ header{
                         bottom: 0;
                         left: 50%;
                         height: 3px;
-                    }`
-                    a::after{
+                    }
+
+                    a::after {
                         position: absolute;
                         content: "";
                         background-color: white;
@@ -85,26 +100,30 @@ header{
                         right: 50%;
                         height: 3px;
                     }
+
                     a:hover::before,
-                    a:hover::after{
+                    a:hover::after {
                         width: 50%;
                         transition: all 500ms ease-in-out;
                     }
                 }
             }
         }
-        .nav-btn{
+
+        .nav-btn {
             display: flex;
             align-items: center;
             gap: 20px;
-            a{
+
+            a {
                 text-decoration: none;
                 font-size: 18px;
                 color: #fff;
             }
         }
     }
-    .hero-section{
+
+    .hero-section {
         margin: 50px 0;
         padding: 55px 0;
         width: 70%;
@@ -113,39 +132,17 @@ header{
         align-items: start;
         flex-direction: column;
         justify-content: center;
-       
-        h1{
+
+        h1 {
             font-size: 80px;
             margin: 40px 0;
         }
-        
-       .ctn{
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        gap: 30px;
-       } 
-    }
-}
 
-.box{
-    background-color: red;
-    width: 200px;
-    height: 300px;
-    margin: 30px auto;
-    position: relative;
-    .sub{
-        background-color: yellow;
-        width: 100px;
-        height: 150px;
-        position: relative;
-    }
-    p{
-        color: black;
-        font-size: 20px;
-        position: absolute;
-        left: 10%;
-        right: 2%;
-        bottom: 0%;
+        .ctn {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
     }
 }
