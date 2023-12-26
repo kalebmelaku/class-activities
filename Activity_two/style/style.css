@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 15px 25px;
+  background-color: #8D5CF6;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 3px solid #fff;
+}
+
+.leading {
+  color: #8D5CF6;
+}
+
+header {
+  height: 80vh;
+  padding: 40px 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(23, 23, 23, 0.207)), url(../assets/images/dark-hero-3-cover\ sec-.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+header nav .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .nav-links .logo {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+header nav .nav-links ul {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+header nav .nav-links ul li {
+  margin-left: 15px;
+}
+header nav .nav-links ul li a {
+  position: relative;
+  width: 50px;
+  height: 100px;
+  padding-bottom: 5px;
+}
+header nav .nav-links ul li a::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 0%;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+}
+header nav .nav-links ul li a::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 0%;
+  bottom: 0;
+  right: 50%;
+  height: 3px;
+}
+header nav .nav-links ul li a:hover::before,
+header nav .nav-links ul li a:hover::after {
+  width: 50%;
+  transition: all 500ms ease-in-out;
+}
+header nav .nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header nav .nav-btn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+header .hero-section {
+  margin: 50px 0;
+  padding: 55px 0;
+  width: 70%;
+  color: #fff;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+header .hero-section h1 {
+  font-size: 80px;
+  margin: 40px 0;
+}
+header .hero-section .ctn {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.box {
+  background-color: red;
+  width: 200px;
+  height: 300px;
+  margin: 30px auto;
+  position: relative;
+}
+.box .sub {
+  background-color: yellow;
+  width: 100px;
+  height: 150px;
+  position: relative;
+}
+.box p {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  left: 10%;
+  right: 2%;
+  bottom: 0%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,151 @@
+@import './variable';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.btn{
+    padding: 15px 25px;
+    background-color: $primary;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.btn-secondary{
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+.leading{
+    color: $primary;
+}
+header{
+    height: 80vh;
+    padding: 40px 0;
+    background-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 0.85),
+    rgba(23, 23, 23, 0.207)),
+        url(../assets/images/dark-hero-3-cover\ sec-.png)
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        .nav-links{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo{
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                margin-left: 40px;
+                li{
+                    margin-left: 15px;
+                    a{
+                        position: relative;
+                        width: 50px;
+                        height: 100px;
+                        padding-bottom: 5px;
+                    }
+                    a::before{
+                        position: absolute;
+                        content: "";
+                        background-color: white;
+                        width: 0%;
+                        bottom: 0;
+                        left: 50%;
+                        height: 3px;
+                    }`
+                    a::after{
+                        position: absolute;
+                        content: "";
+                        background-color: white;
+                        width: 0%;
+                        bottom: 0;
+                        right: 50%;
+                        height: 3px;
+                    }
+                    a:hover::before,
+                    a:hover::after{
+                        width: 50%;
+                        transition: all 500ms ease-in-out;
+                    }
+                }
+            }
+        }
+        .nav-btn{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+    }
+    .hero-section{
+        margin: 50px 0;
+        padding: 55px 0;
+        width: 70%;
+        color: #fff;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+       
+        h1{
+            font-size: 80px;
+            margin: 40px 0;
+        }
+        
+       .ctn{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+       } 
+    }
+}
+
+.box{
+    background-color: red;
+    width: 200px;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+    .sub{
+        background-color: yellow;
+        width: 100px;
+        height: 150px;
+        position: relative;
+    }
+    p{
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        left: 10%;
+        right: 2%;
+        bottom: 0%;
+    }
+}
