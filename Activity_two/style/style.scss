@@ -250,3 +250,14 @@ header {
         }
     }
 }
+@media (max-width: 768px) {
+    .section-3{
+        .grid-container{
+            // horizontal scrolling 
+            // overflow-x: scroll;
+            
+            //one box at a time
+            grid-template-columns: 1fr;
+        }
+    }
+}
